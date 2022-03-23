@@ -31,7 +31,8 @@ function App() {
               element={<RestaurantList />}
             />
           ))}
-          <Route path="/restaurants/:id/review" element={<Restaurant user={user} />} />
+          <Route path="/restaurants/:id" element={<Restaurant user={user} />} />
+          <Route path="/restaurants/:id/review" element={<AddReview user={user} />} />
           <Route path="/login" element={<Login login={login} />} />
         </Routes>
       </div>

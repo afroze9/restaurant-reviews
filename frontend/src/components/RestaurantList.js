@@ -118,7 +118,7 @@ const RestaurantList = () => {
                       <strong>Address: </strong>{address}
                     </p>
                     <div className="row">
-                      <Link to={"/restaurants/" + restaurant.id} className="btn btn-primary">View Reviews</Link>
+                      <Link to={"/restaurants/" + restaurant._id} className="btn btn-primary">View Reviews</Link>
                       <a target="_blank" rel="noreferrer" href={"https://www.google.com/maps/place/" + address} className="btn btn-primary">View on Map</a>
                     </div>
                   </div>
